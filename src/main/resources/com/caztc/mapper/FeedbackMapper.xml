@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.caztc.mapper.FeedbackMapper" >
+    <resultMap id="FeedbackMap" type="Feedback" >
+        <id column="id" property="id" jdbcType="INTEGER" />
+        <result column="subject" property="subject" jdbcType="VARCHAR" />
+        <result column="name" property="name" jdbcType="VARCHAR" />
+        <result column="phone" property="phone" jdbcType="VARCHAR" />
+        <result column="description" property="description" jdbcType="VARCHAR" />
+    </resultMap>
+
+    <select id="list" resultMap="FeedbackMap">
+        select * from feedback
+    </select>
+
+    <insert id="add" parameterType="Feedback">
+        insert into feedback(`subject`, `name`, `phone`, `description`)
+        values (#{subject}, #{name}, #{phone}, #{description})
+    </insert>
+</mapper>

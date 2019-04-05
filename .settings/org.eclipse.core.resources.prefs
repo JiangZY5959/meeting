@@ -1,0 +1,10 @@
+eclipse.preferences.version=1
+encoding//WebContent/view/bespeak/bespeak_auditing.jsp=UTF-8
+encoding//WebContent/view/bespeak/meetingroom_bespeak_auditing.jsp=UTF-8
+encoding//src/com/caztc/domain/MeetingroomBespeak.java=UTF-8
+encoding//src/com/caztc/service/impl/MeetingRoomServiceImpl.java=UTF-8
+encoding//src/com/caztc/web/servlet/bespeak/MeetingroomBespeakShowServlet.java=UTF-8
+encoding//src/com/caztc/web/servlet/bespeak/MeetingroomBespeakUpdateServlet.java=UTF-8
+encoding//src/com/caztc/web/servlet/bespeak/MymeetingroomBespeakAudshowServlet.java=UTF-8
+encoding//src/com/caztc/web/servlet/bespeak/MymeetingroomBespeakShowServlet.java=UTF-8
+encoding//src/com/caztc/web/servlet/meetingroom/MeetingRoomServlet.java=UTF-8

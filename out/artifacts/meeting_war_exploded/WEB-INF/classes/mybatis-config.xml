@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE configuration
+PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+	
+	<typeAliases>
+		<typeAlias alias="UserInfo" type="com.caztc.domain.UserInfo"/>
+		<typeAlias alias="EnzhequipmentInfo" type="com.caztc.domain.EnzhequipmentInfo"/>
+		<typeAlias alias="MeetingRoom" type="com.caztc.domain.MeetingRoom"/>
+		<typeAlias alias="MeetingroomBespeak" type="com.caztc.domain.MeetingroomBespeak"/>
+		<typeAlias alias="MeetingUserinfo" type="com.caztc.domain.MeetingUserinfo"/>
+		<typeAlias type="com.caztc.domain.Feedback" alias="Feedback"/>
+		<typeAlias type="com.caztc.domain.Notice" alias="Notice"/>
+	</typeAliases>
+	
+	<!-- 环境 -->
+	<environments default="developments">
+		<environment id="mysql">
+			<transactionManager type="JDBC"></transactionManager>
+			<dataSource type="POOLED">
+				<property name="driver" value="com.mysql.jdbc.Driver"/>
+				<property name="url" value="jdbc:mysql://localhost:3306/meeting?useUnicode=true&amp;characterEncoding=utf8"/>
+				<property name="username" value="root" />
+				<property name="password" value="32502" />
+			</dataSource>
+		</environment>
+	</environments>
+	
+	<!-- 映射文件 -->
+	<mappers>
+		<mapper resource="com/caztc/mapper/UserInfoMapper.xml"/>
+		<mapper resource="com/caztc/mapper/EnzhequipmentInfoMapper.xml"/>
+		<mapper resource="com/caztc/mapper/MeetingRoomMapper.xml"/>
+		<mapper resource="com/caztc/mapper/MeetingroomBespeakMapper.xml"/>
+		<mapper resource="com/caztc/mapper/MeetingUserinfoMapper.xml"/>
+		<mapper resource="com/caztc/mapper/FeedbackMapper.xml"/>
+		<mapper resource="com/caztc/mapper/NoticeMapper.xml"/>
+	</mappers>
+	
+	
+</configuration>
