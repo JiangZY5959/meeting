@@ -149,7 +149,6 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 						<h3 class="modal-title">作者：JiangZY</h3>
 						<h3 class="modal-title">邮箱：674661761@qq.com</h3>
 						<h3 class="modal-title">电话：18631886335</h3>
-						<h3 class="modal-title">扫一扫添加我的微信</h3>
 					</div>
 					<div  class="form-group">
 						<img src="images/weixinerweima.png" alt=""/>
